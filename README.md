@@ -1,0 +1,2 @@
+# Begehungskonfigurator
+Wirtschaftlichkeiten einer Begehung 
