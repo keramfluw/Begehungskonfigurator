@@ -1,9 +1,13 @@
-# Varianten-Auswahl App
+# Robuste Varianten-Auswahl App
 
-Diese Version lädt die Datei `variables_template.csv`, bietet eine Multiselect-Auswahl über die Spalte `Variant` und zeigt nur die ausgewählten Positionen.
+Diese Version lädt die Datei `variables_template.csv` und erlaubt die Auswahl der Spalte `Variant`.  
+Sie ist robuster implementiert:
+- Leere Werte (NaN) werden entfernt
+- Alle Werte werden als String behandelt
+- Bei Fehlern werden Hinweise angezeigt, statt dass die App abstürzt
 
 ## Dateien
-- `app.py` – Streamlit-App mit Varianten-Auswahl
+- `app.py` – Robuste Varianten-Auswahl
 - `requirements.txt` – Abhängigkeiten
 - `variables_template.csv` – Testdatei
 
