@@ -1,22 +1,24 @@
 import streamlit as st
-import pandas as pd
 import os
 
-st.title("CSV-Detail-Debug")
+st.title("Filesystem-Debug")
 
-file_path = "variables_template.csv"
+# Alle Dateien im aktuellen Verzeichnis anzeigen
+files = os.listdir(".")
+st.write("### Dateien im aktuellen Verzeichnis:")
+for f in files:
+    st.text(f)
 
-if not os.path.exists(file_path):
-    st.error(f"Datei {file_path} nicht gefunden!")
-    st.stop()
-
-try:
-    df = pd.read_csv(file_path)
-    st.success("CSV geladen!")
-    st.write("### Spaltennamen in der CSV:")
-    for col in df.columns:
-        st.text(f"- '{col}'")
-    st.write("### Erste Zeilen (raw):")
-    st.dataframe(df.head(), use_container_width=True)
-except Exception as e:
-    st.error(f"Fehler beim Lesen der CSV: {e}")
+# Prüfen, ob CSV vorhanden ist
+csv_file = "variables_template.csv"
+if csv_file in files:
+    st.success(f"{csv_file} gefunden!")
+    try:
+        with open(csv_file, "r", encoding="utf-8") as fh:
+            content = fh.read(500)  # nur die ersten 500 Zeichen
+        st.write("### Erster Inhalt der CSV:")
+        st.text(content)
+    except Exception as e:
+        st.error(f"Fehler beim Lesen der CSV: {e}")
+else:
+    st.error(f"{csv_file} nicht gefunden!")

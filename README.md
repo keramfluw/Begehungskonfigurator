@@ -1,15 +1,14 @@
-# CSV-Detail-Debug App
+# Filesystem-Debug App
 
-Diese App prüft im Detail die Struktur der CSV-Datei `variables_template.csv`.
-
-Angezeigt werden:
-- alle Spaltennamen (genau wie in der Datei, inkl. Leerzeichen/Sonderzeichen)
-- die ersten 5 Zeilen der Daten
+Diese App zeigt:
+- Alle Dateien im aktuellen Verzeichnis
+- Ob `variables_template.csv` vorhanden ist
+- Falls vorhanden: die ersten 500 Zeichen des Inhalts
 
 ## Dateien
-- `app.py` – Debug-App
-- `requirements.txt` – Python-Abhängigkeiten
-- `variables_template.csv` – Vorlage-Datei mit Daten
+- `app.py` – Filesystem-Debug
+- `requirements.txt` – Abhängigkeiten
+- `variables_template.csv` – Testdatei (falls vorhanden)
 
 ## Start
 ```bash
