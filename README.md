@@ -1,13 +1,9 @@
-# CSV-Lese-Test App
+# Varianten-Auswahl App
 
-Diese App prüft, ob die Datei `variables_template.csv` mit Pandas korrekt geladen werden kann.
-
-Angezeigt werden:
-- Die Spaltennamen der CSV
-- Die ersten 5 Zeilen als Tabelle
+Diese Version lädt die Datei `variables_template.csv`, bietet eine Multiselect-Auswahl über die Spalte `Variant` und zeigt nur die ausgewählten Positionen.
 
 ## Dateien
-- `app.py` – Lese-Test-App
+- `app.py` – Streamlit-App mit Varianten-Auswahl
 - `requirements.txt` – Abhängigkeiten
 - `variables_template.csv` – Testdatei
 
