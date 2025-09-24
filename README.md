@@ -1,15 +1,11 @@
-# Robuste Varianten-Auswahl App
+# Streamlit Diagnostik
 
-Diese Version lädt die Datei `variables_template.csv` und erlaubt die Auswahl der Spalte `Variant`.  
-Sie ist robuster implementiert:
-- Leere Werte (NaN) werden entfernt
-- Alle Werte werden als String behandelt
-- Bei Fehlern werden Hinweise angezeigt, statt dass die App abstürzt
+Diese App **stürzt nicht ab** und zeigt stattdessen Diagnoseinformationen an:
 
-## Dateien
-- `app.py` – Robuste Varianten-Auswahl
-- `requirements.txt` – Abhängigkeiten
-- `variables_template.csv` – Testdatei
+- Python-/Plattform-Version
+- Vorhandene Dateien im Arbeitsverzeichnis
+- Voransicht der `variables_template.csv` (roh, mit Encoding-Vermutung)
+- Robuster Ladeversuch der CSV mit `pandas` (mehrere Encodings & Separatoren)
 
 ## Start
 ```bash
