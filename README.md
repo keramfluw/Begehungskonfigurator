@@ -1,10 +1,11 @@
-# Hello World Streamlit App
+# CSV-Test App
 
-Dies ist die minimalste Version zur Überprüfung, ob Streamlit korrekt gestartet wird.
+Diese Version lädt die Datei `variables_template.csv` und zeigt den Inhalt in einer Tabelle an.
 
 ## Dateien
-- `app.py` – Minimal-App (Hello World)
+- `app.py` – Streamlit-App
 - `requirements.txt` – Python-Abhängigkeiten
+- `variables_template.csv` – Vorlage-Datei mit Daten
 
 ## Start
 ```bash
