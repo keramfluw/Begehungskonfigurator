@@ -1,14 +1,15 @@
-# Filesystem-Debug App
+# CSV-Lese-Test App
 
-Diese App zeigt:
-- Alle Dateien im aktuellen Verzeichnis
-- Ob `variables_template.csv` vorhanden ist
-- Falls vorhanden: die ersten 500 Zeichen des Inhalts
+Diese App prüft, ob die Datei `variables_template.csv` mit Pandas korrekt geladen werden kann.
+
+Angezeigt werden:
+- Die Spaltennamen der CSV
+- Die ersten 5 Zeilen als Tabelle
 
 ## Dateien
-- `app.py` – Filesystem-Debug
+- `app.py` – Lese-Test-App
 - `requirements.txt` – Abhängigkeiten
-- `variables_template.csv` – Testdatei (falls vorhanden)
+- `variables_template.csv` – Testdatei
 
 ## Start
 ```bash
