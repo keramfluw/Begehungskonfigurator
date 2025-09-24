@@ -1,6 +1,6 @@
-# CSV-Test App
+# Varianten-Auswahl App
 
-Diese Version lädt die Datei `variables_template.csv` und zeigt den Inhalt in einer Tabelle an.
+Diese Version lädt die Datei `variables_template.csv`, bietet eine Multiselect-Auswahl der Spalte `Variant` und zeigt nur die ausgewählten Positionen an.
 
 ## Dateien
 - `app.py` – Streamlit-App
