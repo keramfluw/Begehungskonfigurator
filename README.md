@@ -1,9 +1,10 @@
-# CSV-Debug App
+# CSV-Detail-Debug App
 
-Diese Version dient nur zur Analyse der CSV-Struktur.  
-Sie lädt `variables_template.csv` und zeigt:
-- die Spaltennamen
-- die ersten 5 Zeilen
+Diese App prüft im Detail die Struktur der CSV-Datei `variables_template.csv`.
+
+Angezeigt werden:
+- alle Spaltennamen (genau wie in der Datei, inkl. Leerzeichen/Sonderzeichen)
+- die ersten 5 Zeilen der Daten
 
 ## Dateien
 - `app.py` – Debug-App
