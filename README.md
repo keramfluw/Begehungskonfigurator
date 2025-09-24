@@ -1,9 +1,12 @@
-# Varianten-Auswahl App
+# CSV-Debug App
 
-Diese Version lädt die Datei `variables_template.csv`, bietet eine Multiselect-Auswahl der Spalte `Variant` und zeigt nur die ausgewählten Positionen an.
+Diese Version dient nur zur Analyse der CSV-Struktur.  
+Sie lädt `variables_template.csv` und zeigt:
+- die Spaltennamen
+- die ersten 5 Zeilen
 
 ## Dateien
-- `app.py` – Streamlit-App
+- `app.py` – Debug-App
 - `requirements.txt` – Python-Abhängigkeiten
 - `variables_template.csv` – Vorlage-Datei mit Daten
 
